@@ -1,0 +1,85 @@
+IP: 200.207.194.16
+TECH:  31
+
+Script: alcatelswSAR
+Nome Equipamento: i-br-sp-spo-msvn-hl3-03
+Type: 7750 SR 7S
+
+User: labsigrestsp
+Pass: d3s3nv4lv!m3nt4
+
+COMANDOS:
+
+SHOW MDA 
+SHOW MDA DETAIL 
+SHOW CARD 
+SHOW CARD DETAIL 
+SHOW PORT 
+SHOW VERSION 
+
+SCRIPT 31: 
+
+labsigrestsp
+d3s3nv4lv!m3nt4
+200.207.194.16
+
+f-br-sp-spo-msvn-hl2-01	10.129.114.201	7750 SR7s	OK	OK
+f-br-sp-spo-msvn-hl2-02	10.129.114.202	7750 SR7s	OK	OK
+f-br-sp-spo-msvn-hl1-01	10.129.114.200	7750 SR7s	OK	OK
+
+ssh labsigrestsp@200.207.194.16
+
+ssh labsigrestsp@10.129.114.201
+
+ssh labsigrestsp@10.129.114.202
+
+ssh labsigrestsp@10.129.114.202
+
+./coletaNokia7Sjoao.pl SR7Sjoao1 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv 
+
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao0805 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao0905 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao1005 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao100519 i-br-sp-spo-msv-hl3-03 10.129.114.201 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao123100519 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao123130519 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao123160519 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+./coletaNokia7SFirstjoao.pl SR7SFirstjoao123200519 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv
+
+./coletaNokia7Sjoao1.pl SR7Sjoao2 i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv 
+
+./coletaNokia7S.pl SR7S i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv 
+
+./coletaNokia7S.pl SR7Sjoao i-br-sp-spo-msv-hl3-03 200.207.194.16 labsigrestsp d3s3nv4lv\!m3nt4 labmsv 
+
+RACK
+SUBRACK
+SHELF
+SLOT
+SUBSLOT
+PORT 
+
+CENARIO:
+
+RACK/SHELF/SLOT/PORT
+
+
+=====================================================================================
+
+PLACAS & PORTAS ANOTAÇÕES.
+
+TOTAL DE PORTS 68.
+
+SLOT 1 = 64 COLETADAS ( SATELLITE ) 
+  - ESTA COLENTANDO AS 64 PORTAS DO SATELLITE.
+  
+SLOT 2 = NÃO COLETADO 
+
+SLOT A = 2 PORTAS COLETADAS
+
+SLOT B = 2 PORTAS COLETADAS
+
+SATELLITE =  COLETADA COM O SCRIPT QUE COLETA O SLOT 1 
